@@ -1,0 +1,21 @@
+
+# Created by https://www.gitignore.io/api/prepros,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=prepros,visualstudiocode
+
+### Prepros ###
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/prepros,visualstudiocode
