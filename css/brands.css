@@ -1,70 +1,70 @@
 :root {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/404.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/404.svg");
  --background-color: #ffffff88;
 }
 
 *[brand*=instapaper] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/instapaper.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/instapaper.svg");
  --background-color: #bfbfbf88;
 }
 
 *[brand*=deepl] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/deepl.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/deepl.svg");
  --background-color: #dceaf888;
 }
 
 *[brand*=garmin] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/garmin.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/garmin.svg");
  --background-color: #c3e9ff88;
 }
 
 *[brand*=twitch] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/twitch.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/twitch.svg");
  --background-color: #f1edf888;
 }
 
 *[brand*=ohmportal] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/ohmportal.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/ohmportal.svg");
  --background-color: #a0caff88;
 }
 
 *[brand*=carrd] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/carrd.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/carrd.svg");
  --background-color: #eae1ea88;
 }
 
 *[brand*=amazon] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/amazon.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/amazon.svg");
  --background-color: #ffcc8088;
 }
 
 *[brand*=google] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/google.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/google.svg");
  --background-color: #bad3fb88;
 }
 
 *[brand*=ebay] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/ebay.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/ebay.svg");
  --background-color: #f3a3a688;
 }
 
 *[brand*=zalando] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/zalando.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/zalando.svg");
  --background-color: #ffb48088;
 }
 
 *[brand*=feedly] {
- --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/feedly.svg");
+ --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/feedly.svg");
  --background-color: #e4f8e988;
 }
 
 *[brand*=monkii] {
-  --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/monkii.svg");
+  --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/monkii.svg");
   --background-color: #c7e3a188;
  }
 
  *[brand*=papierkram] {
-  --background-image: url("https://kreativ-anders.github.io/about-blank/assetts/brands/papierkram.svg");
+  --background-image: url("https://kreativ-anders.github.io/myStartseite/assetts/brands/papierkram.svg");
   --background-color: #abe5fe88;
  }
 
