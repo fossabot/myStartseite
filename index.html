@@ -16,7 +16,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  
+
 
   <script src="https://www.baqend.com/js-sdk/latest/baqend.min.js"></script>
 
@@ -31,13 +31,10 @@
 
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-rounded is-warning">
-                #StopPinTab
-              </a>
-            </div>
-          </div>
+      <a class="navbar-item" href="#">
+        <img src="assetts/logo.svg" width="112" height="28">
+      </a>
+
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
         data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
@@ -47,6 +44,20 @@
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-rounded is-warning is-static">
+              #StopPinTab
+            </a>
+            <a class="button is-rounded is-info is-outlined"
+              href="https://github.com/kreativ-anders/myStartseite/releases/tag/v0.3.1-beta"
+              target="_blank">
+              v0.3.1-beta
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
@@ -124,7 +135,8 @@
               <span class="icon is-small is-left">
                 <i class="fas fa-lock"></i>
               </span>
-              <p class="help"><i style="color: rgba(80,80,80,.5)">(Let's be honest - nobody wants to retype a password.)</i></p>
+              <p class="help"><i style="color: rgba(80,80,80,.5)">(Let's be honest - nobody wants to retype a
+                  password.)</i></p>
             </p>
           </div>
         </section>
@@ -138,7 +150,7 @@
   <!-- Modals -->
 
   <div class="box limitbar">
-      <progress id="limitbar" class="progress is-small" value="0" max="12"></progress>
+    <progress id="limitbar" class="progress is-small" value="0" max="12"></progress>
   </div>
 
   <div class="jumbotron container box" id="jumbotron">
@@ -147,8 +159,9 @@
         <p class="control">
           <input class="input" type="text" name="title" placeholder="Title" minlength="2" required>
         </p>
-        <p class="control">
-          <input class="input" type="url" name="link" placeholder="Link" maxlength="255" onblur="checkURL(this)" required>
+        <p class="control is-expanded">
+          <input class="input" type="url" name="link" placeholder="Link" maxlength="255" onblur="checkURL(this)"
+            required>
         </p>
         <p class="control">
           <button type="submit" class="button">Add Bookmark</button>
