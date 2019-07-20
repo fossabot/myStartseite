@@ -1,71 +1,66 @@
-:root {
- --background-image: url("../assetts/brands/404.svg");
- --background-color: #ffffff88;
-}
-
 *[brand*=instapaper] {
- --background-image: url("../assetts/brands/instapaper.svg");
- --background-color: #bfbfbf88;
+ background-image: url("../assetts/brands/instapaper.svg");
+ background-color: #bfbfbf88;
 }
 
 *[brand*=deepl] {
- --background-image: url("../assetts/brands/deepl.svg");
- --background-color: #dceaf888;
+ background-image: url("../assetts/brands/deepl.svg");
+ background-color: #dceaf888;
 }
 
 *[brand*=garmin] {
- --background-image: url("../assetts/brands/garmin.svg");
- --background-color: #c3e9ff88;
+ background-image: url("../assetts/brands/garmin.svg");
+ background-color: #c3e9ff88;
 }
 
 *[brand*=twitch] {
- --background-image: url("../assetts/brands/twitch.svg");
- --background-color: #f1edf888;
+ background-image: url("../assetts/brands/twitch.svg");
+ background-color: #f1edf888;
 }
 
 *[brand*=ohmportal] {
- --background-image: url("../assetts/brands/ohmportal.svg");
- --background-color: #a0caff88;
+ background-image: url("../assetts/brands/ohmportal.svg");
+ background-color: #a0caff88;
 }
 
 *[brand*=carrd] {
- --background-image: url("../assetts/brands/carrd.svg");
- --background-color: #eae1ea88;
+ background-image: url("../assetts/brands/carrd.svg");
+ background-color: #eae1ea88;
 }
 
 *[brand*=amazon] {
- --background-image: url("../assetts/brands/amazon.svg");
- --background-color: #ffcc8088;
+ background-image: url("../assetts/brands/amazon.svg");
+ background-color: #ffcc8088;
 }
 
 *[brand*=google] {
- --background-image: url("../assetts/brands/google.svg");
- --background-color: #bad3fb88;
+ background-image: url("../assetts/brands/google.svg");
+ background-color: #bad3fb88;
 }
 
 *[brand*=ebay] {
- --background-image: url("../assetts/brands/ebay.svg");
- --background-color: #f3a3a688;
+ background-image: url("../assetts/brands/ebay.svg");
+ background-color: #f3a3a688;
 }
 
 *[brand*=zalando] {
- --background-image: url("../assetts/brands/zalando.svg");
- --background-color: #ffb48088;
+ background-image: url("../assetts/brands/zalando.svg");
+ background-color: #ffb48088;
 }
 
 *[brand*=feedly] {
- --background-image: url("../assetts/brands/feedly.svg");
- --background-color: #e4f8e988;
+ background-image: url("../assetts/brands/feedly.svg");
+ background-color: #e4f8e988;
 }
 
 *[brand*=monkii] {
-  --background-image: url("../assetts/brands/monkii.svg");
-  --background-color: #c7e3a188;
+  background-image: url("../assetts/brands/monkii.svg");
+  background-color: #c7e3a188;
  }
 
  *[brand*=papierkram] {
-  --background-image: url("../assetts/brands/papierkram.svg");
-  --background-color: #abe5fe88;
+  background-image: url("../assetts/brands/papierkram.svg");
+  background-color: #abe5fe88;
  }
 
  
