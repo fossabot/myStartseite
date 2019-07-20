@@ -63,4 +63,82 @@
   background-color: #abe5fe88;
  }
 
+ *[brand*=booking] {
+  background-image: url("../assetts/brands/booking.svg");
+  background-color: #80b5ff88;
+ }
+
+*[brand*=chip] {
+  background-image: url("../assetts/brands/chip.svg");
+  background-color: #f7b4b288;
+}
+
+*[brand*=netflix] {
+  background-image: url("../assetts/brands/netflix.svg");
+  background-color: #feefef88;
+}
+
+*[brand*=bild] {
+  background-image: url("../assetts/brands/bild.svg");
+  background-color: #ffdbdb88;
+}
+
+*[brand*=twitter] {
+  background-image: url("../assetts/brands/twitter.svg");
+  background-color: #96d3f988;
+}
+
+*[brand*=paypal] {
+  background-image: url("../assetts/brands/paypal.svg");
+  background-color: #87b2ff88;
+}
+
+*[brand*=yahoo] {
+  background-image: url("../assetts/brands/yahoo.svg");
+  background-color: #c393ff88;
+}
+
+*[brand*=pornhub] {
+  background-image: url("../assetts/brands/pornhub.svg");
+  background-color: #ffd69a88;
+}
+
+*[brand*=reddit] {
+  background-image: url("../assetts/brands/reddit.svg");
+  background-color: #ffa28088;
+}
+
+*[brand*=yandex] {
+  background-image: url("../assetts/brands/yandex.svg");
+  background-color: #ffe68088;
+}
+
+*[brand*=kleinanzeigen] {
+  background-image: url("../assetts/brands/kleinanzeigen.svg");
+  background-color: #f3a3a688;
+}
+*[brand*=wikipedia] {
+  background-image: url("../assetts/brands/wikipedia.svg");
+  background-color: #bfbfbf88;
+}
+
+*[brand*=facebook] {
+  background-image: url("../assetts/brands/facebook.svg");
+  background-color: #dfe6f388;
+}
+*[brand*=instagram] {
+  background-image: url("../assetts/brands/instagram.svg");
+  background-color: #b1bdf588;
+}
+
+*[brand*=web] {
+  background-image: url("../assetts/brands/web.svg");
+  background-color: #ffec8088;
+}
+
+*[brand*=youtube] {
+  background-image: url("../assetts/brands/youtube.svg");
+  background-color: #ff808088;
+}
+
  
