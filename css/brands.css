@@ -141,4 +141,9 @@
   background-color: #ff808088;
 }
 
+*[brand*=baqend] {
+  background-image: url("../assetts/brands/baqend.svg");
+  background-color: #fac8bd88;
+}
+
  
