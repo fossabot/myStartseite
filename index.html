@@ -1,295 +1,263 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+<head><meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>myStartseite</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>myStartseite</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" href="https://myStartseite.net/" />
 
-  <link rel="canonical" href="https://myStartseite.net/" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 
-  <script src="https://www.baqend.com/js-sdk/latest/baqend.min.js"></script>
+<script src="https://www.baqend.com/js-sdk/latest/baqend.min.js"></script>
 
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/brands.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/brands.css">
 </head>
-
 <body>
-
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="#">
-        <img src="assetts/logo.svg" width="112" height="28">
-      </a>
-
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-        data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item">
-          <div class="buttons">
-            <a class="button is-rounded is-warning is-static">
-              #StopPinTab
-            </a>
-            <a class="button is-rounded is-info is-outlined"
-              href="https://github.com/kreativ-anders/myStartseite/releases/tag/v0.3.1-beta" target="_blank">
-              v0.3.1-beta
-            </a>
-            <a class="button is-rounded is-warning" onclick="$('#premiumModal').toggleClass('is-active');">
-              <span class="icon">
-                <i class="fas fa-star"></i>
-              </span>
-              <span>Go Premium</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="buttons">
-            <button id="register" class="button" onclick="$('#signupModal').toggleClass('is-active');">Register</button>
-            <button id="login" class="button" onclick="$('#loginModal').toggleClass('is-active');">Login</button>
-            <button id="logout" class="button" onclick="logout()">Logout</button>
-          </div>
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <img src="assetts/logo.svg" width="112" height="28">
+    </a>
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+      data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-rounded is-warning is-static">
+            #StopPinTab
+          </a>
+          <a class="button is-rounded is-info is-outlined"
+            href="https://github.com/kreativ-anders/myStartseite/releases/tag/v0.3.1-beta" target="_blank">
+            v0.3.1-beta
+          </a>
+          <a class="button is-rounded is-warning" onclick="$('#premiumModal').toggleClass('is-active');">
+            <span class="icon">
+              <i class="fas fa-star"></i>
+            </span>
+            <span>Go Premium</span>
+          </a>
         </div>
       </div>
     </div>
-  </nav>
-
-  <!-- Modals -->
-  <!-- Log In -->
-  <div class="modal" id="loginModal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <form onsubmit="login(this.email.value, this.password.value); this.reset(); return false;" method="POST">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Login</p>
-          <button onclick="$('#loginModal').toggleClass('is-active');" class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="field">
-            <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" name="email" value="" placeholder="Email">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
-            </p>
-          </div>
-          <div class="field">
-            <p class="control has-icons-left">
-              <input class="input" type="password" name="password" value="" placeholder="Password">
-              <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
-              </span>
-            </p>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success" type="submit">Log In</button>
-          <button class="button is-text" onclick="$('#loginModal').toggleClass('is-active');">Cancel</button>
-        </footer>
-      </form>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button id="register" class="button" onclick="$('#signupModal').toggleClass('is-active');">Register</button>
+          <button id="login" class="button" onclick="$('#loginModal').toggleClass('is-active');">Login</button>
+          <button id="logout" class="button" onclick="logout()">Logout</button>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- Sign Up -->
-  <div class="modal" id="signupModal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
-      <form onsubmit="register(this.email.value, this.password.value); this.reset(); return false;" method="POST">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Register</p>
-          <button onclick="$('#signupModal').toggleClass('is-active');" class="delete" aria-label="close"></button>
-        </header>
-        <section class="modal-card-body">
-          <div class="field">
-            <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" name="email" value="" placeholder="Email">
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
-            </p>
-          </div>
-          <div class="field">
-            <p class="control has-icons-left">
-              <input class="input" type="password" name="password" value="" placeholder="Password">
-              <span class="icon is-small is-left">
-                <i class="fas fa-lock"></i>
-              </span>
-              <p class="help"><i style="color: rgba(80,80,80,.5)">(Let's be honest - nobody wants to retype a
-                  password.)</i></p>
-            </p>
-          </div>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button is-success" type="submit">Sign Up</button>
-          <button class="button is-text" onclick="$('#signupModal').toggleClass('is-active');">Cancel</button>
-        </footer>
-      </form>
-    </div>
-  </div>
-  <!-- Premium -->
-  <div class="modal" id="premiumModal">
-    <div class="modal-background"></div>
-    <div class="modal-card">
+</nav><div class="modal" id="loginModal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <form onsubmit="login(this.email.value, this.password.value); this.reset(); return false;" method="POST">
       <header class="modal-card-head">
-        <p class="modal-card-title">Pricing</p>
-        <button onclick="$('#premiumModal').toggleClass('is-active');" class="delete" aria-label="close"></button>
+        <p class="modal-card-title">Login</p>
+        <button onclick="$('#loginModal').toggleClass('is-active');" class="delete" aria-label="close"></button>
       </header>
       <section class="modal-card-body">
-        <p><strong>As easy as the tool itself ... hopefully &#128517;</strong></p><br>
-        <!---->
-        <div class="pricing-table is-comparative">
-          <div class="pricing-plan is-features">
-            <div class="plan-header">Features</div>
-            <div class="plan-price"><span class="plan-price-amount">&nbsp;</span></div>
-            <div class="plan-items">
-              <div class="plan-item">Bookmarks</div>
-            </div>
-            <div class="plan-footer">
-
-            </div>
-          </div>
-          <div class="pricing-plan">
-            <div class="plan-header">Free</div>
-            <div class="plan-price"><span class="plan-price-amount"><span
-                  class="plan-price-currency">€</span>0</span>/year</div>
-            <div class="plan-items">
-              <div class="plan-item" data-feature="Bookmarks">4</div>
-            </div>
-            <div class="plan-footer">
-              <button class="button is-fullwidth" disabled="disabled">Current plan</button>
-            </div>
-          </div>
-
-          <div class="pricing-plan is-active">
-            <div class="plan-header">Premium</div>
-            <div class="plan-price"><span class="plan-price-amount"><span
-                  class="plan-price-currency">€</span>9</span>/year</div>
-            <div class="plan-items">
-              <div class="plan-item" data-feature="Bookmarks">36</div>
-            </div>
-            <div class="plan-footer content is-small">
-              <a class="button is-fullwidth" id="checkout-button-plan_FVSMzPuEBUXbiW" role="link">Checkout</a>
-              <em>(Redirect to Stripe)</em>
-            </div>
-          </div>
-
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input class="input" type="email" name="email" value="" placeholder="Email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </p>
         </div>
-        <!---->
-        <div class="notification is-info" style="margin-top: 3rem;">
-          <button class="delete"></button>
-          The collection of the brand-backgrounds are based on usage and are crafted manually with &#9749; + &#10084;.
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="password" name="password" value="" placeholder="Password">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
         </div>
       </section>
       <footer class="modal-card-foot">
-        <button class="button is-text" onclick="$('#premiumModal').toggleClass('is-active');">Cancel</button>
+        <button class="button is-success" type="submit">Log In</button>
+        <button class="button is-text" onclick="$('#loginModal').toggleClass('is-active');">Cancel</button>
       </footer>
-    </div>
-  </div>
-  <!-- Modals -->
-
-  <div class="box limitbar">
-    <progress id="limitbar" class="progress is-small" value="0" max="12"></progress>
-  </div>
-
-  <div class="jumbotron container box" id="jumbotron">
-    <form onsubmit="addBookmark(this.title.value, this.link.value); this.reset(); return false;">
-      <div class="field is-grouped is-grouped-multiline container">
-        <p class="control">
-          <input class="input" type="text" name="title" placeholder="Title" minlength="2" required>
-        </p>
-        <p class="control is-expanded">
-          <input class="input" type="url" name="link" placeholder="Link" maxlength="255" onblur="checkURL(this)"
-            required>
-        </p>
-        <p class="control">
-          <button type="submit" class="button">Add Bookmark</button>
-        </p>
-      </div>
     </form>
   </div>
-
-  <div class="container notification is-danger" id="limit" style="display: none">
-    <button class="delete" onclick="$('#limit').hide();"></button>
-    Limit reached!
+</div><div class="modal" id="signupModal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <form onsubmit="register(this.email.value, this.password.value); this.reset(); return false;" method="POST">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Register</p>
+        <button onclick="$('#signupModal').toggleClass('is-active');" class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div class="field">
+          <p class="control has-icons-left has-icons-right">
+            <input class="input" type="email" name="email" value="" placeholder="Email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-check"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="password" name="password" value="" placeholder="Password">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+            <p class="help"><i style="color: rgba(80,80,80,.5)">(Let's be honest - nobody wants to retype a
+                password.)</i></p>
+          </p>
+        </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success" type="submit">Sign Up</button>
+        <button class="button is-text" onclick="$('#signupModal').toggleClass('is-active');">Cancel</button>
+      </footer>
+    </form>
   </div>
+</div><div class="modal" id="premiumModal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Pricing</p>
+      <button onclick="$('#premiumModal').toggleClass('is-active');" class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <p><strong>As easy as the tool itself ... hopefully &#128517;</strong></p><br>
+      <!---->
+      <div class="pricing-table is-comparative">
+        <div class="pricing-plan is-features">
+          <div class="plan-header">Features</div>
+          <div class="plan-price"><span class="plan-price-amount">&nbsp;</span></div>
+          <div class="plan-items">
+            <div class="plan-item">Bookmarks</div>
+          </div>
+          <div class="plan-footer">
 
-  <!-- Load Stripe.js on your website. -->
-  <script src="https://js.stripe.com/v3"></script>
+          </div>
+        </div>
+        <div class="pricing-plan">
+          <div class="plan-header">Free</div>
+          <div class="plan-price"><span class="plan-price-amount"><span
+                class="plan-price-currency">€</span>0</span>/year</div>
+          <div class="plan-items">
+            <div class="plan-item" data-feature="Bookmarks">4</div>
+          </div>
+          <div class="plan-footer">
+            <button class="button is-fullwidth" disabled="disabled">Current plan</button>
+          </div>
+        </div>
 
-  <div id="error-message"></div>
-
-  <script>
-    var stripe = Stripe('pk_test_NPtMizChMDJ9SIRUKzEVQKxS00vzPp4bey');
-
-    var checkoutButton = document.getElementById('checkout-button-plan_FVSMzPuEBUXbiW');
-    checkoutButton.addEventListener('click', function () {
-      // When the customer clicks on the button, redirect
-      // them to Checkout.
-      stripe.redirectToCheckout({
-        items: [{ plan: 'plan_FVSMzPuEBUXbiW', quantity: 1 }],
-
-        // Do not rely on the redirect to the successUrl for fulfilling
-        // purchases, customers may not always reach the success_url after
-        // a successful payment.
-        // Instead use one of the strategies described in
-        // https://stripe.com/docs/payments/checkout/fulfillment
-        successUrl: 'https://mystartseite.net/success',
-        cancelUrl: 'https://mystartseite.net/canceled',
-        customerEmail: DB.User.me.username,
-      })
-        .then(function (result) {
-          if (result.error) {
-            // If `redirectToCheckout` fails due to a browser or network
-            // error, display the localized error message to your customer.
-            var displayError = document.getElementById('error-message');
-            displayError.textContent = result.error.message;
-          }
-        });
-    });
-  </script>
-
-
-
-  <section class="section">
-    <div class="container">
-      <div class="columns is-multiline" id="bookmarks">
+        <div class="pricing-plan is-active">
+          <div class="plan-header">Premium</div>
+          <div class="plan-price"><span class="plan-price-amount"><span
+                class="plan-price-currency">€</span>9</span>/year</div>
+          <div class="plan-items">
+            <div class="plan-item" data-feature="Bookmarks">36</div>
+          </div>
+          <div class="plan-footer content is-small">
+            <a class="button is-fullwidth" id="checkout-button-plan_FVSMzPuEBUXbiW" role="link">Checkout</a>
+            <em>(Redirect to Stripe)</em>
+          </div>
+        </div>
 
       </div>
+      <!---->
+      <div class="notification is-info" style="margin-top: 3rem;">
+        <button class="delete"></button>
+        The collection of the brand-backgrounds are based on usage and are crafted manually with &#9749; + &#10084;.
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-text" onclick="$('#premiumModal').toggleClass('is-active');">Cancel</button>
+    </footer>
+  </div>
+</div><div class="box limitbar">
+  <progress id="limitbar" class="progress is-small" value="0" max="12"></progress>
+</div><div class="jumbotron container box" id="jumbotron">
+  <form onsubmit="addBookmark(this.title.value, this.link.value); this.reset(); return false;">
+    <div class="field is-grouped is-grouped-multiline container">
+      <p class="control">
+        <input class="input" type="text" name="title" placeholder="Title" minlength="2" required>
+      </p>
+      <p class="control is-expanded">
+        <input class="input" type="url" name="link" placeholder="Link" maxlength="255" onblur="checkURL(this)"
+          required>
+      </p>
+      <p class="control">
+        <button type="submit" class="button">Add Bookmark</button>
+      </p>
     </div>
-  </section>
+  </form>
+</div> <div class="container notification is-danger" id="limit" style="display: none">
+  <button class="delete" onclick="$('#limit').hide();"></button>
+  Limit reached!
+</div><!-- Load Stripe.js on your website. -->
+<script src="https://js.stripe.com/v3"></script>
 
-  <script src="js/baqend.js"></script>
-  <script src="js/main.js"></script>
+<div id="error-message"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/1.2.2/instantpage.min.js"></script>
+<script>
+  var stripe = Stripe('pk_test_NPtMizChMDJ9SIRUKzEVQKxS00vzPp4bey');
+
+  var checkoutButton = document.getElementById('checkout-button-plan_FVSMzPuEBUXbiW');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      items: [{ plan: 'plan_FVSMzPuEBUXbiW', quantity: 1 }],
+
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'https://mystartseite.net/success',
+      cancelUrl: 'https://mystartseite.net/canceled',
+      customerEmail: DB.User.me.username,
+    })
+      .then(function (result) {
+        if (result.error) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, display the localized error message to your customer.
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      });
+  });
+</script><section class="section">
+  <div class="container">
+    <div class="columns is-multiline" id="bookmarks">
+
+    </div>
+  </div>
+</section>
 </body>
-
-
-
-</html>
+<footer><script src="js/baqend.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/1.2.2/instantpage.min.js"></script>
+</footer>
