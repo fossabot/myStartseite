@@ -27,11 +27,13 @@ a.delete:hover {
 }
 
 .card-background {
+ background: linear-gradient(to bottom, white 0%, darkgray 100%);
  background-position: center;
  background-repeat: repeat-x;
  background-size: contain;
  background-blend-mode: lighten;
  background-attachment: inherit;
+
 }
 
 .card-content {

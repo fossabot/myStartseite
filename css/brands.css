@@ -1,8 +1,3 @@
-*[brand*=abc] {
-  background-image: url("../assetts/brands/404.svg");
-  background-color: #ffffff88;
-}
-
 *[brand*=instapaper] {
  background-image: url("../assetts/brands/instapaper.svg");
  background-color: #bfbfbf88;
