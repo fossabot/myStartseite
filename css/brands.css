@@ -1,149 +1,149 @@
 *[brand*=instapaper] {
  background-image: url("../assetts/brands/instapaper.svg");
- background-color: #bfbfbf88;
+ background-color: rgba(191,191,191,0.5333);
 }
 
 *[brand*=deepl] {
  background-image: url("../assetts/brands/deepl.svg");
- background-color: #dceaf888;
+ background-color: rgba(220,234,248,0.5333);
 }
 
 *[brand*=garmin] {
  background-image: url("../assetts/brands/garmin.svg");
- background-color: #c3e9ff88;
+ background-color: rgba(195,233,255,0.5333);
 }
 
 *[brand*=twitch] {
  background-image: url("../assetts/brands/twitch.svg");
- background-color: #f1edf888;
+ background-color: rgba(241,237,248,0.5333);
 }
 
 *[brand*=ohmportal] {
  background-image: url("../assetts/brands/ohmportal.svg");
- background-color: #a0caff88;
+ background-color: rgba(160,202,255,0.5333);
 }
 
 *[brand*=carrd] {
  background-image: url("../assetts/brands/carrd.svg");
- background-color: #eae1ea88;
+ background-color: rgba(234,225,234,0.5333);
 }
 
 *[brand*=amazon] {
  background-image: url("../assetts/brands/amazon.svg");
- background-color: #ffcc8088;
+ background-color: rgba(255,204,128,0.5333);
 }
 
 *[brand*=google] {
  background-image: url("../assetts/brands/google.svg");
- background-color: #bad3fb88;
+ background-color: rgba(186,211,251,0.5333);
 }
 
 *[brand*=ebay] {
  background-image: url("../assetts/brands/ebay.svg");
- background-color: #f3a3a688;
+ background-color: rgba(243,163,166,0.5333);
 }
 
 *[brand*=zalando] {
  background-image: url("../assetts/brands/zalando.svg");
- background-color: #ffb48088;
+ background-color: rgba(255,180,128,0.5333);
 }
 
 *[brand*=feedly] {
  background-image: url("../assetts/brands/feedly.svg");
- background-color: #e4f8e988;
+ background-color: rgba(228,248,233,0.5333);
 }
 
 *[brand*=monkii] {
   background-image: url("../assetts/brands/monkii.svg");
-  background-color: #c7e3a188;
+  background-color: rgba(199,227,161,0.5333);
  }
 
  *[brand*=papierkram] {
   background-image: url("../assetts/brands/papierkram.svg");
-  background-color: #abe5fe88;
+  background-color: rgba(171,229,254,0.5333);
  }
 
  *[brand*=booking] {
   background-image: url("../assetts/brands/booking.svg");
-  background-color: #80b5ff88;
+  background-color: rgba(128,181,255,0.5333);
  }
 
 *[brand*=chip] {
   background-image: url("../assetts/brands/chip.svg");
-  background-color: #f7b4b288;
+  background-color: rgba(247,180,178,0.5333);
 }
 
 *[brand*=netflix] {
   background-image: url("../assetts/brands/netflix.svg");
-  background-color: #feefef88;
+  background-color: rgba(254,239,239,0.5333);
 }
 
 *[brand*=bild] {
   background-image: url("../assetts/brands/bild.svg");
-  background-color: #ffdbdb88;
+  background-color: rgba(255,219,219,0.5333);
 }
 
 *[brand*=twitter] {
   background-image: url("../assetts/brands/twitter.svg");
-  background-color: #96d3f988;
+  background-color: rgba(150,211,249,0.5333);
 }
 
 *[brand*=paypal] {
   background-image: url("../assetts/brands/paypal.svg");
-  background-color: #87b2ff88;
+  background-color: rgba(135,178,255,0.5333);
 }
 
 *[brand*=yahoo] {
   background-image: url("../assetts/brands/yahoo.svg");
-  background-color: #c393ff88;
+  background-color: rgba(195,147,255,0.5333);
 }
 
 *[brand*=pornhub] {
   background-image: url("../assetts/brands/pornhub.svg");
-  background-color: #ffd69a88;
+  background-color: rgba(255,214,154,0.5333);
 }
 
 *[brand*=reddit] {
   background-image: url("../assetts/brands/reddit.svg");
-  background-color: #ffa28088;
+  background-color: rgba(255,162,128,0.5333);
 }
 
 *[brand*=yandex] {
   background-image: url("../assetts/brands/yandex.svg");
-  background-color: #ffe68088;
+  background-color: rgba(255,230,128,0.5333);
 }
 
 *[brand*=kleinanzeigen] {
   background-image: url("../assetts/brands/kleinanzeigen.svg");
-  background-color: #f3a3a688;
+  background-color: rgba(243,163,166,0.5333);
 }
 *[brand*=wikipedia] {
   background-image: url("../assetts/brands/wikipedia.svg");
-  background-color: #bfbfbf88;
+  background-color: rgba(191,191,191,0.5333);
 }
 
 *[brand*=facebook] {
   background-image: url("../assetts/brands/facebook.svg");
-  background-color: #dfe6f388;
+  background-color: rgba(223,230,243,0.5333);
 }
 *[brand*=instagram] {
   background-image: url("../assetts/brands/instagram.svg");
-  background-color: #b1bdf588;
+  background-color: rgba(177,189,245,0.5333);
 }
 
 *[brand*=web] {
   background-image: url("../assetts/brands/web.svg");
-  background-color: #ffec8088;
+  background-color: rgba(255,236,128,0.5333);
 }
 
 *[brand*=youtube] {
   background-image: url("../assetts/brands/youtube.svg");
-  background-color: #ff808088;
+  background-color: rgba(255,128,128,0.5333);
 }
 
 *[brand*=baqend] {
   background-image: url("../assetts/brands/baqend.svg");
-  background-color: #fac8bd88;
+  background-color: rgba(250,200,189,0.5333);
 }
 
  

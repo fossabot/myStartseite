@@ -13,17 +13,17 @@ a.is-disabled:hover:after {
 
 a.delete {
  margin: 0.75rem;
- background-color: #8b000088;
+ background-color: rgba(139,0,0,0.5333);
 }
 
 a.delete:focus,
 a.delete:hover {
- background-color: #8b0000;
+ background-color: rgba(139,0,0,1.000);
 }
 
 .modal-card-foot,
 .modal-card-head {
- background-color: #FFF;
+ background-color: rgba(255,255,255,1.000);
 }
 
 .card-background {
