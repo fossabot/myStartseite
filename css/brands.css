@@ -146,4 +146,14 @@
   background-color: rgba(250,200,189,0.5333);
 }
 
+*[brand*=fresenius] {
+  background-image: url("../assetts/brands/fresenius.svg");
+  background-color: rgba(153,194,255,0.5333);
+}
+
+*[brand*=mendeley] {
+  background-image: url("../assetts/brands/mendeley.svg");
+  background-color: rgba(247,208,211,0.533);
+}
+
  
