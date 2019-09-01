@@ -13,7 +13,6 @@ a.is-disabled:hover:after {
 
 a.delete {
  margin: 0.75rem;
- background-color: rgba(139,0,0,0.5333);
 }
 
 a.delete:focus,
