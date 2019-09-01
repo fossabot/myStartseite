@@ -6,7 +6,7 @@
 <script>
   var stripe = Stripe((window.location.host === "mystartseite.net") ? 'pk_live_bHErex61tS0tYXXXpGHeisJR009SwcK9R8' : 'pk_test_NPtMizChMDJ9SIRUKzEVQKxS00vzPp4bey');
 
-  var checkoutButton = document.getElementById((window.location.host === "mystartseite.net") ? 'checkout-button-plan_FjJ1JjcEG0HxDm' : 'checkout-button-plan_FVSMzPuEBUXbiW');
+  var checkoutButton = document.getElementById('stripe-checkout');
   
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
