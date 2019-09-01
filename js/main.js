@@ -13,8 +13,6 @@ $(document).ready(function () {
 
   });
 
-  Sentry.init({ dsn: 'https://53d88f97d3f3412e8e9276ca328e8b1b@sentry.io/1548137' });
-
   connectBaqend();
 
 });
