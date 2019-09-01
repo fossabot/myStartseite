@@ -105,7 +105,7 @@ function showBookmarks() {
     html += '   </a>';
     html += '    <footer class="card-footer" style="border: none">';
     html += '      <p class="card-footer-item" style="justify-content: right; border: none;"></p>';
-    html += '      <a class="delete card-footer-item" style="" onclick="deleteBookmark(' + i + ')" aria-label="close"></a>';
+    html += '      <a class="delete card-footer-item" title="Delete Bookmark" onclick="deleteBookmark(' + i + ')" aria-label="close"></a>';
     html += '    </footer>';
     html += '  </div>';
     html += '</div>';
