@@ -4,14 +4,15 @@
 <div id="error-message"></div>
 
 <script>
-  var stripe = Stripe('pk_test_NPtMizChMDJ9SIRUKzEVQKxS00vzPp4bey');
+  var stripe = Stripe((window.location.host === "domainfritze.com") ? 'pk_live_bHErex61tS0tYXXXpGHeisJR009SwcK9R8' : 'pk_test_NPtMizChMDJ9SIRUKzEVQKxS00vzPp4bey');
 
-  var checkoutButton = document.getElementById('checkout-button-plan_FVSMzPuEBUXbiW');
+  var checkoutButton = document.getElementById((window.location.host === "domainfritze.com") ? 'checkout-button-plan_FjJ1JjcEG0HxDm' : 'checkout-button-plan_FVSMzPuEBUXbiW');
+  
   checkoutButton.addEventListener('click', function () {
     // When the customer clicks on the button, redirect
     // them to Checkout.
     stripe.redirectToCheckout({
-      items: [{ plan: 'plan_FVSMzPuEBUXbiW', quantity: 1 }],
+      items: [{ plan: (window.location.host === "domainfritze.com") ? 'plan_FjJ1JjcEG0HxDm' : 'plan_FVSMzPuEBUXbiW', quantity: 1 }],
 
       // Do not rely on the redirect to the successUrl for fulfilling
       // purchases, customers may not always reach the success_url after
