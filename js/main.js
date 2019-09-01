@@ -13,6 +13,9 @@ $(document).ready(function () {
 
   });
 
+  // give checkout the right env (Production / Test)
+  document.getElementById('stripe-checkout').id = (window.location.host === "mystartseite.net") ? 'checkout-button-plan_FjJ1JjcEG0HxDm' : 'checkout-button-plan_FVSMzPuEBUXbiW';
+
   connectBaqend();
 
 });
