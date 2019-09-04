@@ -156,4 +156,14 @@
   background-color: rgba(247,208,211,0.533);
 }
 
+*[brand*=github] {
+  background-image: url("../assetts/brands/github.svg");
+  background-color: rgba(243,240,247,0.533)
+}
+
+*[brand*=nivona] {
+  background-image: url("../assetts/brands/nivona.svg");
+  background-color: rgba(252,187,193,0.533)
+}
+
  
