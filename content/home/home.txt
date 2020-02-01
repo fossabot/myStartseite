@@ -1,0 +1,30 @@
+Title: myStartseite
+
+----
+
+Bookmarks:
+
+- 
+  title: Organize your bookmarks with beautiful little cards. FREE until the servers do not crash :D How does a real-life example look like?
+  link: 
+- 
+  title: Simply <s>stalk</s> people on facebook by saving the link here. 
+  link: https://www.facebook.com/
+- 
+  title: Your bookmarks stay safe from companies that want your data. All background images are crafted by hand. Do you love shopping? Just save a bookmark to your favorite online store...
+  link: 
+- 
+  title: Amazon
+  link: https://www.amazon.com/
+- 
+  title: Sometimes images are missing. No worries, just drop us a line and we try to fix it ASAP or check this repo out at Github! We <3 Open Source.
+  link: 
+- 
+  title: Not convinced yet? Just look at the next card ;)
+  link: 
+- 
+  title: What a cute kitten? (Lars Millberg @Unsplash.com)
+  link: 
+- 
+  title: Ok, that was a mean move! But Just register na try by yourself - It´s still FREE.
+  link: 
