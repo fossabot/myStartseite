@@ -1,21 +1,41 @@
+# System files
+# ------------
 
-# Created by https://www.gitignore.io/api/prepros,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=prepros,visualstudiocode
+Icon
+.DS_Store
 
-### Prepros ###
-# Config Prepros files to ignore
-prepros.cfg
-prepros-6.config
+# Temporary files
+# ---------------
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+/media/*
+!/media/index.html
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
+# Lock files
+# ---------------
+.lock
 
-# End of https://www.gitignore.io/api/prepros,visualstudiocode
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+/site/config/.license

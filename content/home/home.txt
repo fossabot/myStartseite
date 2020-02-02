@@ -1,0 +1,30 @@
+Title: myStartseite
+
+----
+
+Bookmarks:
+
+- 
+  title: Your personal start page with your favorite online links - organized in beautiful little cards. 😎<br />No more pinned tabs!
+  link: 
+- 
+  title: Add friends on facebook as cards by saving a title and the link. 
+  link: https://www.facebook.com/
+- 
+  title: Your bookmarks stay safe from companies that want your data. No database is used that can be compromised! 👀
+  link: 
+- 
+  title: Simply add a bookmark to your favorite online store or Amazon. 😉
+  link: https://www.amazon.com/
+- 
+  title: We ❤️ Open Source.<br/>Check out the GitHub repo! 🤓
+  link: https://github.com/kreativ-anders/myStartseite/
+- 
+  title: Not convinced yet? 🤔<br/>Just look at the next card ...
+  link: 
+- 
+  title: What a cute Kitten!? 😍<br/>(by Lars Millberg @Unsplash.com)
+  link: https://unsplash.com/@millberg
+- 
+  title: Ok, that was a mean move! 😏<br/>Maybe you register and try by yourself - It´s completely FREE! 💸<br/>(until the server crashes 😅)
+  link:
