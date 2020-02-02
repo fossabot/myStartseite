@@ -5,26 +5,26 @@ Title: myStartseite
 Bookmarks:
 
 - 
-  title: Organize your bookmarks with beautiful little cards. FREE until the servers do not crash :D How does a real-life example look like?
+  title: Your personal start page with your favorite online links - organized in beautiful little cards. 😎<br />No more pinned tabs!
   link: 
 - 
-  title: Simply <s>stalk</s> people on facebook by saving the link here. 
+  title: Add friends on facebook as cards by saving a title and the link. 
   link: https://www.facebook.com/
 - 
-  title: Your bookmarks stay safe from companies that want your data. All background images are crafted by hand. Do you love shopping? Just save a bookmark to your favorite online store...
+  title: Your bookmarks stay safe from companies that want your data. No database is used that can be compromised! 👀
   link: 
 - 
-  title: Amazon
+  title: Simply add a bookmark to your favorite online store or Amazon. 😉
   link: https://www.amazon.com/
 - 
-  title: Sometimes images are missing. No worries, just drop us a line and we try to fix it ASAP or check this repo out at Github! We <3 Open Source.
+  title: We ❤️ Open Source.<br/>Check out the GitHub repo! 🤓
+  link: https://github.com/kreativ-anders/myStartseite/
+- 
+  title: Not convinced yet? 🤔<br/>Just look at the next card ...
   link: 
 - 
-  title: Not convinced yet? Just look at the next card ;)
-  link: 
+  title: What a cute Kitten!? 😍<br/>(by Lars Millberg @Unsplash.com)
+  link: https://unsplash.com/@millberg
 - 
-  title: What a cute kitten? (Lars Millberg @Unsplash.com)
-  link: 
-- 
-  title: Ok, that was a mean move! But Just register na try by yourself - It´s still FREE.
-  link: 
+  title: Ok, that was a mean move! 😏<br/>Maybe you register and try by yourself - It´s completely FREE! 💸<br/>(until the server crashes 😅)
+  link:

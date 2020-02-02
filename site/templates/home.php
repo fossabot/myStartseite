@@ -52,7 +52,7 @@
       <?php foreach ($cards as $i => $bookmark): ?>
       <div class="column is-one-quarter">
         <div class="card card-background" brand="<?= Str::lower($bookmark['title']) ?>">
-          <a rel="noopener noreferrer" href="<?= $bookmark['link'] ?>">
+          <a rel="noopener noreferrer" target="_self" href="<?= $bookmark['link'] ?>">
             <header class="card-header">
               <p class="card-header-title"><?= $bookmark['title'] ?></p>
             </header>

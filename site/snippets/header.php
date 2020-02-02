@@ -53,15 +53,13 @@
                 <a class="button is-rounded is-warning is-static">
                   #StopPinTab
                 </a>
-                <a class="button is-rounded is-info is-outlined"
-                  href="https://github.com/kreativ-anders/myStartseite/releases/tag/v0.3.1-beta" target="_blank">
-                  v0.3.1-beta
-                </a>
-                <a class="button is-rounded is-warning" onclick="$('#premiumModal').toggleClass('is-active');">
-                  <span class="icon">
-                    <i class="fas fa-star"></i>
-                  </span>
-                  <span>Go Premium</span>
+                <a class="button is-rounded is-warning" style="background-color: #009cde">
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="Q5FEJZKEAR4H4" />
+                    <input style="width: 190px; padding-top: 6px;" type="image" src="https://raw.githubusercontent.com/andreostrovsky/donate-with-paypal/master/PNG/blue.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
                 </a>
               </div>
             </div>
