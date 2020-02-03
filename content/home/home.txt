@@ -23,7 +23,7 @@ Bookmarks:
   title: Not convinced yet? 🤔<br/>Just look at the next card ...
   link: 
 - 
-  title: What a cute Kitten!? 😍<br/>(by Lars Millberg @Unsplash.com)
+  title: What a cute Kitten!? 😍<br/>(Photo by Lars Millberg)
   link: https://unsplash.com/@millberg
 - 
   title: Ok, that was a mean move! 😏<br/>Maybe you register and try by yourself - It´s completely FREE! 💸<br/>(until the server crashes 😅)
