@@ -1,7 +1,9 @@
 title: Visitor
+permissions:
+  access:
+    panel: false
 
 tabs:
-
   # main content tab
   info:
     label: Social Media
@@ -37,7 +39,3 @@ tabs:
           link:
             label: Link
             type: text
- 
-permissions:
-  access:
-    panel: false
