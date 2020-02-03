@@ -17,8 +17,6 @@
   if(isset($error)) {
     echo "Error: " . $error. "<br />";
   }
-  go('/');
-
 ?>
 
   <div class="text">
