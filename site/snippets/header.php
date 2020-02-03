@@ -57,7 +57,7 @@
                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="Q5FEJZKEAR4H4" />
-                    <input style="width: 190px; padding-top: 6px;" type="image" src="https://raw.githubusercontent.com/andreostrovsky/donate-with-paypal/master/PNG/blue.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <input src-root="https://github.com/andreostrovsky/donate-with-paypal" style="width: 190px; padding-top: 6px;" type="image" src="assets/blue-donate-with-PayPal-button.svg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                     <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
                     </form>
                 </a>
