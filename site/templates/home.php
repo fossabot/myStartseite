@@ -17,6 +17,7 @@
 
 <hr>
 
+<?php if($kirby->user()): ?>
 <div class="jumbotron container box" id="jumbotron">
   <form method="POST">
     <div class="field is-grouped is-grouped-multiline container">
@@ -33,6 +34,7 @@
     </div>
   </form>
 </div> 
+<?php endif; ?>
 
 <div id="error-message"></div>
 
