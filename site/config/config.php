@@ -11,5 +11,9 @@ return [
     'debug' => true,
     'panel' =>[
         'install' => true
-      ]
+    ],
+    'session' => [
+      'durationNormal' => 1209600, 
+      'timeout'        => 3600,
+  ]
 ];
