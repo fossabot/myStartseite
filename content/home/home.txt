@@ -28,3 +28,9 @@ Bookmarks:
 - 
   title: Ok, that was a mean move! 😏<br/>Maybe you register and try by yourself - It´s completely FREE! 💸<br/>(until the server crashes 😅)
   link:
+- 
+  title: Created by kreativ-anders
+  link: https://kreativ-anders.de
+- 
+  title: Made with Kirby
+  link: https://getkirby.com/
