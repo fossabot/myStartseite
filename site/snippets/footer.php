@@ -10,9 +10,18 @@
 
   </div>
 
-  <footer>
+  <footer class="footer">
+
+    <div class="content has-text-centered">
+      <p>
+        <strong>myStartseite</strong> by <a href="https://kreativ-anders.de/">kreativ-anders.de</a>
+        built with <a href="https://getkirby.com/">Kirby</a>.
+      </p>
+    </div>
+
     <script src="assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/1.2.2/instantpage.min.js"></script>
+
   </footer>
 
 </body>
