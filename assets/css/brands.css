@@ -170,3 +170,28 @@
   background-image: url("../../assets/brands/kitten.jpg");
   background-color: rgba(143,143,143,0.3)
 } 
+
+*[brand*=celonis] {
+  background-image: url("../../assets/brands/celonis.svg");
+  background-color: rgba(255,128,128,0.533);
+} 
+
+*[brand*='one piece'] {
+  background-image: url("../../assets/brands/onepiece.svg");
+  background-color: rgba(131,136,255,0.533);
+} 
+
+*[brand*=envato] {
+  background-image: url("../../assets/brands/envato.svg");
+  background-color: rgba(251,253,248,0.533);
+} 
+
+*[brand*=kirby] {
+  background-image: url("../../assets/brands/kirby.svg");
+  background-color: rgba(243,240,247,0.533)
+} 
+
+*[brand*=kreativ-anders] {
+  background-image: url("../../assets/brands/kreativanders.svg");
+  background-color: rgba(255,210,128,0.533);
+} 
