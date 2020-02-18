@@ -1,10 +1,5 @@
-<!-- 
-<form onsubmit="register(this.email.value, this.password.value); this.reset(); return false;" method="POST">
-
--->
-
 <div class="modal" id="signupModal">
-  <div class="modal-background"></div>
+  <div class="modal-background" onclick="$('#signupModal').toggleClass('is-active');"></div>
   <div class="modal-card">
     <header class="modal-card-head">
       <p class="modal-card-title">Register</p>
