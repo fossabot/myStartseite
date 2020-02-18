@@ -20,6 +20,8 @@
   
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+  <script src="https://cmp.osano.com/Azyw0MRqrHJ51Hyu/17b58c70-e801-4f4c-b412-94406e2013c5/osano.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -64,13 +66,10 @@
                 <a class="button is-rounded is-warning is-static">
                   #StopPinTab
                 </a>
-                <a class="button is-rounded is-warning" style="background-color: #009cde">
-                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick" />
-                    <input type="hidden" name="hosted_button_id" value="Q5FEJZKEAR4H4" />
-                    <input src-root="https://github.com/andreostrovsky/donate-with-paypal" style="width: 190px; padding-top: 6px;" type="image" src="assets/blue-donate-with-PayPal-button.svg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
-                    </form>
+                <a class="button is-rounded is-warning" style="background-color: #009cde" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q5FEJZKEAR4H4&source=url">
+                  <input src-root="https://github.com/andreostrovsky/donate-with-paypal" style="width: 190px;" type="image" src="assets/blue-donate-with-PayPal-button.svg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                </a>
+                  
                 </a>
               </div>
             </div>

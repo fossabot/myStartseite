@@ -1,6 +1,6 @@
 <?php
 
-return function ($kirby) {
+return function ($kirby, $page) {
 
   $error = null;
 
