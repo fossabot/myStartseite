@@ -13,7 +13,7 @@
 <?php snippet('header') ?>
 <?php snippet('modals/login') ?>
 <?php snippet('modals/signup') ?>
-<?php snippet('modals/premium') ?>
+<?php snippet('modals/change') ?>
 
 <hr>
 
@@ -22,10 +22,10 @@
   <form method="POST">
     <div class="field is-grouped is-grouped-multiline container">
       <p class="control">
-        <input class="input" type="text" name="title" placeholder="Title" minlength="2" required>
+        <input class="input" type="text" name="c_title" placeholder="Title" minlength="2" required>
       </p>
       <p class="control is-expanded">
-        <input class="input" type="url" name="link" placeholder="Link" maxlength="255" onblur="checkURL(this)"
+        <input class="input" type="url" name="c_link" placeholder="Link" maxlength="255" onblur="checkURL(this)"
           required>
       </p>
       <p class="control">
@@ -36,22 +36,11 @@
 </div> 
 <?php endif; ?>
 
-<div id="error-message"></div>
-
 <section class="section">
   <div class="container">
     <div class="columns is-multiline" id="bookmarks">
 
-      <?php
-        if($kirby->user()) {
-          $cards = $kirby->user()->bookmarks()->yaml();
-        } 
-        else {
-          $cards = $page->bookmarks()->yaml();
-        }
-      ?>
-
-      <?php foreach ($cards as $i => $bookmark): ?>
+      <?php foreach ($bookmarks as $i => $bookmark): ?>
       <div class="column is-one-quarter">
         <div class="card card-background" brand="<?= Str::lower($bookmark['title']) ?>">
           <a rel="noopener noreferrer" target="_self" href="<?= $bookmark['link'] ?>">
@@ -63,17 +52,29 @@
               </div>
             </div>
           </a>
-          <footer class="card-footer" style="border: none">
-            <p class="card-footer-item" style="justify-content: right; border: none;"></p>
-            <form action="" method="POST">
-              <input name="bookmark" value="<?= $i ?>" type="hidden" />
-              <button class="delete card-footer-item" type="submit"></button>
-            </form>
-          </footer>
+          <?php  if($kirby->user()): ?>
+            <footer class="card-footer" style="justify-content: space-between; border: none; margin: 0.5rem;">     
+              <span class="icon edit">                
+                  <i class="fas fa-edit" onclick="changeData('<?= $i ?>','<?= $bookmark['title'] ?>', '<?= $bookmark['link'] ?>', ''); $('#changeModal').toggleClass('is-active');"></i>
+              </span>
+              <form action="" method="POST">
+                <input name="d_bookmark" value="<?= $i ?>" type="hidden" />
+                <button class="delete" type="submit">
+              </form>                   
+            </footer>
+          <?php else: ?>
+            <footer class="card-footer" style="border: none">
+              <p class="card-footer-item" style="justify-content: space-between; border: none;">
+                <span class="icon edit">                
+                    <i class="fas fa-edit"></i>
+                </span> 
+                <span class="icon delete"></span>
+              </p>     
+            </footer>
+            <?php endif; ?>
         </div>
       </div>
       <?php endforeach ?>
-
 
     </div>
   </div>
