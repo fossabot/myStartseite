@@ -7,24 +7,32 @@ Bookmarks:
 - 
   title: Your personal start page with your favorite online links - organized in beautiful little cards. 😎<br />No more pinned tabs!
   link: 
+  tags:
 - 
   title: Add friends on facebook as cards by saving a title and the link. 
   link: https://www.facebook.com/
+  tags: Social Media
 - 
   title: Your bookmarks stay safe from companies that want your data. No database is used that can be compromised! 👀
   link: 
+  tags: Security
 - 
   title: Do you like shopping? Simply add your favorite online store - or Amazon. 😉
   link: https://www.amazon.com/
+  tags: Shopping
 - 
   title: We ❤️ Open Source.<br/>Check out the GitHub repo! 🤓
   link: https://github.com/kreativ-anders/myStartseite/
+  tags: Open Source, Code
 - 
   title: Not convinced yet? 🤔<br/>Maybe you register and try by yourself - It´s completely FREE! 💸<br/>(until the server crashes 😅)<br/>Only optional donations if you like.
   link: 
+  tags:
 - 
   title: Made with Kirby
   link: https://getkirby.com/
+  tags: Open Source
 -
   title: Feedback and comments are highly appreciated.<br/>So feel free to drop a line! 😊
   link: mailto:hello@kreativ-anders.de?subject=myStartseite-Feedback
+  tags: Whatever you want to tag 😉

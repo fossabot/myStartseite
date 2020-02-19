@@ -41,7 +41,7 @@
     <div class="columns is-multiline" id="bookmarks">
 
       <?php foreach ($bookmarks as $i => $bookmark): ?>
-      <div class="column is-one-quarter">
+      <div class="column is-one-quarter" data-tags="<?= $bookmark['tags'] ?>">
         <div class="card card-background" brand="<?= Str::lower($bookmark['title']) ?>">
           <a rel="noopener noreferrer" target="_self" href="<?= $bookmark['link'] ?>">
             <header class="card-header">
@@ -53,23 +53,32 @@
             </div>
           </a>
           <?php  if($kirby->user()): ?>
-            <footer class="card-footer" style="justify-content: space-between; border: none; margin: 0.5rem;">     
+            <footer class="card-footer">     
               <span class="icon edit">                
-                  <i class="fas fa-edit" onclick="changeData('<?= $i ?>','<?= $bookmark['title'] ?>', '<?= $bookmark['link'] ?>', ''); $('#changeModal').toggleClass('is-active');"></i>
+                <i class="fas fa-edit" onclick="changeData('<?= $i ?>','<?= $bookmark['title'] ?>', '<?= $bookmark['link'] ?>', '<?= $bookmark['tags'] ?>'); $('#changeModal').toggleClass('is-active');"></i>
               </span>
+            
+                <?php foreach (Str::split($bookmark['tags']) as $tag): ?>
+                  <span class="tag" onclick="toggleTag('<?= $tag ?>')"><?= $tag ?></span>
+                <?php endforeach; ?>
+              
               <form action="" method="POST">
                 <input name="d_bookmark" value="<?= $i ?>" type="hidden" />
                 <button class="delete" type="submit">
               </form>                   
             </footer>
           <?php else: ?>
-            <footer class="card-footer" style="border: none">
-              <p class="card-footer-item" style="justify-content: space-between; border: none;">
-                <span class="icon edit">                
-                    <i class="fas fa-edit"></i>
-                </span> 
-                <span class="icon delete"></span>
-              </p>     
+            <footer class="card-footer">
+              <span class="icon edit">                
+                <i class="fas fa-edit"></i>
+              </span>
+              
+              <?php foreach (Str::split($bookmark['tags']) as $tag): ?>
+                <span class="tag" onclick="toggleTag('<?= $tag ?>')"><?= $tag ?></span>
+              <?php endforeach; ?>
+              
+              <button class="delete" type="submit" disabled>
+                
             </footer>
             <?php endif; ?>
         </div>

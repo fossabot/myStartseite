@@ -28,16 +28,14 @@
             </span>
           </p>
         </div>
-        <!--
         <div class="field">
           <p class="control has-icons-left">
-            <input class="input" type="text" id="tags" name="u_tags" placeholder="Tags" value="">
+            <input class="input" type="text" id="tags" name="u_tags" placeholder="Tag1, Tag2, Tag3" value="">
             <span class="icon is-small is-left">
               <i class="fas fa-tags"></i>
             </span>
           </p>
         </div>
-        -->
       </section>
       <footer class="modal-card-foot">
         <button class="button is-success" type="submit">Update</button>

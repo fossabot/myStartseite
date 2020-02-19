@@ -22,13 +22,17 @@ return function ($kirby, $page) {
     // -----------------------
 
     // UpdateBookmark()
-    if((int) get('u_id') >= 0 and get('u_title') and get('u_link')) {
+    if((int) get('u_id') >= 0 and get('u_title') and get('u_link') and get('u_tags', '')) {
 
       $bookmarks = $user->bookmarks()->yaml();
 
+      $arr = Str::split(get('u_tags', ''), ",");
+      $tags = A::join(array_intersect_key($arr, array_unique(array_map('strtolower', $arr))));
+
       $arr = array(
         (int) get('u_id') => array( 'title' => get('u_title')
-                                   ,'link'  => get('u_link'))
+                                   ,'link'  => get('u_link')
+                                   ,'tags'  => $tags)
       );
 
       $bookmarks = array_replace($bookmarks, $arr);
@@ -51,7 +55,8 @@ return function ($kirby, $page) {
 
       $arr = array(
          'title' => get('c_title')
-        ,'link'  => get('c_link'));
+        ,'link'  => get('c_link')
+        ,'tags'  => '');
 
       
       array_push($bookmarks, $arr);
