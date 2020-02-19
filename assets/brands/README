@@ -8,12 +8,17 @@ All svg files follow this guidline:
 
 The background-image color is 75, 50 or 25% lighten of the brand color:
 ``
-$c: #XXXXXX;
+$brand: #XXXXXX;
 
-c {
-  color-75: lighten($c,75%); /* mostly white */
-  color-50: lighten($c,50%); /* sometimes white */
-  color-25: lighten($c,25%); /* never white */
+$color-75: lighten($brand,75%); /* mostly white */
+$color-50: lighten($brand,50%); /* sometimes white */
+$color-25: lighten($brand,25%); /* never white */
+
+convert {
+  color-75: $color-75;
+  color-50: $color-50;
+  color-25: $color-25;
+  convert: rgba($color-XX, 0.533);
 }
 ``
 
