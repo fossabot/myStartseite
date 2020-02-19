@@ -8,6 +8,7 @@ return function ($kirby) {
 
     try {
       $user->logout();
+      go();
 
     } catch(Exception $e) {
 
