@@ -4,7 +4,24 @@ permissions:
     panel: false
 
 tabs:
-  # main content tab
+  # Meta Tab
+  meta:
+    label: Additional Info
+    fields:
+      bookmarks:
+        label: Bookmarks
+        type: structure
+        fields:
+          title:
+            label: Title
+            type: text
+          link:
+            label: Link
+            type: text
+          tags:
+            label: Tags
+            type: tags
+  # Social Media
   info:
     label: Social Media
     fields:
@@ -24,18 +41,3 @@ tabs:
         type: text
         icon: instagram
         placeholder: username
-
-  # meta tab
-  meta:
-    label: Additional Info
-    fields:
-      bookmarks:
-        label: Bookmarks
-        type: structure
-        fields:
-          title:
-            label: Title
-            type: text
-          link:
-            label: Link
-            type: text
