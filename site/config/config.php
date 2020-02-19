@@ -15,5 +15,6 @@ return [
     'session' => [
       'durationNormal' => 1209600, 
       'timeout'        => 3600,
-  ]
+    ],
+    'osano' => false
 ];
