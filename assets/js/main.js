@@ -16,6 +16,16 @@ $(document).ready(function () {
   if ( window.history.replaceState ) {
     window.history.replaceState( null, null, window.location.href );
   }
+
+  // Search Title-Link-Tags
+  $(document).ready(function(){
+    $("#s_title, #s_link, #s_tags").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $("#bookmarks > div").filter(function() {
+        $(this).toggle($(this).attr("data-search").toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
   
 });
 

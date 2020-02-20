@@ -20,13 +20,25 @@
 <?php if($kirby->user()): ?>
 <div class="jumbotron container box" id="jumbotron">
   <form method="POST">
-    <div class="field is-grouped is-grouped-multiline container">
-      <p class="control">
-        <input class="input" type="text" name="c_title" placeholder="Title" minlength="2" required>
+    <div class="field is-grouped is-grouped-multiline has-addons">
+      <p class="control has-icons-right">
+        <input class="input" id="s_title" type="text" name="c_title" placeholder="Title" minlength="2" required>
+        <span class="icon is-small is-right">
+          <i class="fas fa-search"></i>
+        </span>
       </p>
-      <p class="control is-expanded">
-        <input class="input" type="url" name="c_link" placeholder="Link" maxlength="255" onblur="checkURL(this)"
+      <p class="control is-expanded has-icons-right">
+        <input class="input" id="s_link" type="url" name="c_link" placeholder="Link" maxlength="255" onblur="checkURL(this)"
           required>
+        <span class="icon is-small is-right">
+          <i class="fas fa-search"></i>
+        </span>
+      </p>
+      <p class="control has-icons-right">
+        <input class="input" id="s_tags" type="text" name="c_tags" placeholder="Tag1, Tag2, Tag3" maxlength="255">
+        <span class="icon is-small is-right">
+          <i class="fas fa-search"></i>
+        </span>
       </p>
       <p class="control">
         <button type="submit" class="button">Add Bookmark</button>
@@ -41,7 +53,9 @@
     <div class="columns is-multiline" id="bookmarks">
 
       <?php foreach ($bookmarks as $i => $bookmark): ?>
-      <div class="column is-one-quarter" data-tags="<?= $bookmark['tags'] ?>">
+      <div class="column is-one-quarter" 
+        data-search="<?= $bookmark['title'] . ';' . $bookmark['link'] . ';' . $bookmark['tags'] ?>" 
+        data-tags="<?= $bookmark['tags'] ?>">
         <div class="card card-background" brand="<?= Str::lower($bookmark['title']) ?>">
           <a rel="noopener noreferrer" target="_self" href="<?= $bookmark['link'] ?>">
             <header class="card-header">

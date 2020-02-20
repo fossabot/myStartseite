@@ -11,6 +11,14 @@ return function ($kirby, $page) {
     $bookmarks = $page->bookmarks()->yaml();
   }
 
+  if (get('u_tags') !== null or get('c_tags') !== null) {
+    $arr = Str::split(get('u_tags', '') . get('c_tags', ''), ",");
+    $tags = A::join(array_intersect_key($arr, array_unique(array_map('strtolower', $arr))));
+  }
+  else {
+    $tags = '';
+  } 
+
 	if($user = $kirby->user() and $kirby->request()->is('POST')) {
 
     // CRUD Naming Convention!
@@ -24,17 +32,7 @@ return function ($kirby, $page) {
     // UpdateBookmark()
     if((int) get('u_id') >= 0 and get('u_title') and get('u_link')) {
 
-      $bookmarks = $user->bookmarks()->yaml();
-
-      if (get('u_tags') !== null ) {
-        $arr = Str::split(get('u_tags', ''), ",");
-        $tags = A::join(array_intersect_key($arr, array_unique(array_map('strtolower', $arr))));
-      }
-      else {
-        $tags = '';
-      }
-
-      
+      $bookmarks = $user->bookmarks()->yaml();  
 
       $arr = array(
         (int) get('u_id') => array( 'title' => get('u_title')
@@ -63,7 +61,7 @@ return function ($kirby, $page) {
       $arr = array(
          'title' => get('c_title')
         ,'link'  => get('c_link')
-        ,'tags'  => '');
+        ,'tags'  => $tags);
 
       
       array_push($bookmarks, $arr);
