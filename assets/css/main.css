@@ -58,10 +58,8 @@ span.tag:hover {
  background: linear-gradient(to bottom, white 0%, lightgray 100%);
  background-position: center;
  background-repeat: no-repeat;
- background-size: contain;
- background-blend-mode: lighten;
+ background-size: auto;
  background-attachment: inherit;
-
 }
 
 .card-content {
@@ -71,6 +69,14 @@ span.tag:hover {
 .card {
  height: 100%;
  border-radius: 4px;
+}
+
+.card-header {
+  background:hsla(0, 0%, 100%, .3);
+  -webkit-backdrop-filter: blur(3px);
+  -moz-backdrop-filter: blur(3px);
+  -khtml-backdrop-filter: blur(3px);
+  -ms-backdrop-filter: blur(3px);
 }
 
 .card:hover {
