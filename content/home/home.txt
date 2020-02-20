@@ -36,7 +36,3 @@ Bookmarks:
   title: Feedback and comments are highly appreciated.<br/>So feel free to drop a line! 😊
   link: mailto:hello@kreativ-anders.de?subject=myStartseite-Feedback
   tags: Whatever you want to tag 😉
--
-  title: Coffee
-  link: 
-  tags: 
