@@ -8,13 +8,10 @@
     <form action="login" method="POST">
       <section class="modal-card-body">
         <div class="field">
-          <p class="control has-icons-left has-icons-right">
+          <p class="control has-icons-left">
             <input class="input" type="email" name="email" value="" placeholder="Email" required>
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
             </span>
           </p>
         </div>
