@@ -190,3 +190,48 @@
   background-image: url("../../assets/brands/coffee.svg");
   background-color: rgba(255, 213, 191, 0.533);
 } 
+
+*[brand*=trello] {
+  background-image: url("../../assets/brands/trello.svg");
+  background-color: rgba(191, 232, 255, 0.533);
+} 
+
+*[brand*=canva] {
+  background-image: url("../../assets/brands/canva.svg");
+  background-color: rgba(204, 253, 255, 0.533);
+} 
+
+*[brand*=evernote] {
+  background-image: url("../../assets/brands/evernote.svg");
+  background-color: rgba(239, 251, 243, 0.533);
+} 
+
+*[brand*=fiverr] {
+  background-image: url("../../assets/brands/fiverr.svg");
+  background-color: rgba(178, 255, 197, 0.533);
+} 
+
+*[brand*=jquery] {
+  background-image: url("../../assets/brands/jquery.svg");
+  background-color: rgba(183, 224, 252, 0.533);
+} 
+
+*[brand*='trusted shops'] {
+  background-image: url("../../assets/brands/trustedshops.svg");
+  background-color: rgba(255, 239, 143, 0.533);
+} 
+
+*[brand*=couchsurfing] {
+  background-image: url("../../assets/brands/couchsurfing.svg");
+  background-color: rgba(255, 247, 241, 0.533);
+} 
+
+*[brand*=tailorstore] {
+  background-image: url("../../assets/brands/tailorstore.svg");
+  background-color: rgba(230, 214, 194, 0.533);
+} 
+
+*[brand*=shopify] {
+  background-image: url("../../assets/brands/shopify.svg");
+  background-color: rgba(204, 224, 166, 0.533);
+} 
