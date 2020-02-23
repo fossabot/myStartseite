@@ -55,7 +55,6 @@ span.tag:hover {
 }
 
 .card-background {
- background: linear-gradient(to bottom, white 0%, lightgray 100%);
  background-position: center;
  background-repeat: no-repeat;
  background-size: auto;
