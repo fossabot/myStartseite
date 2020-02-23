@@ -13,7 +13,7 @@
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
-              <p class="help"><i style="color: rgba(80,80,80,.5)">It is obvious that the email will be saved and used by myStartseite.net!? - For authentication.</i> 😬</p>
+              <p class="help"><i style="color: rgba(80,80,80,.5)">It is obvious that the email will be stored and used by myStartseite.net!? - For authentication.</i> 😬</p>
             </p>
           </div>
           <div class="field">
