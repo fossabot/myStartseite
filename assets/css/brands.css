@@ -235,3 +235,13 @@
   background-image: url("../../assets/brands/shopify.svg");
   background-color: rgba(204, 224, 166, 0.533);
 } 
+
+*[brand*=duckduckgo] {
+  background-image: url("../../assets/brands/duckduckgo.svg");
+  background-color: rgba(240, 178, 161, 0.533);
+} 
+
+*[brand*=bing] {
+  background-image: url("../../assets/brands/bing.svg");
+  background-color: rgba(170, 233, 255, 0.533);
+} 
