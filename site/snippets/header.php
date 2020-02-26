@@ -53,7 +53,7 @@
     <header class="header">
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="#">
+          <a class="navbar-item" href="<?= $site->url() ?>">
             <img src="assets/logo/logo.svg" width="112" height="28">
           </a>
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
@@ -84,6 +84,11 @@
                   <button id="login" class="button" onclick="$('#loginModal').toggleClass('is-active');">Login</button>
                 <?php endif; ?>
                 <?php  if($kirby->user()): ?>
+                  <button id="user" class="button is-white" onclick="$('#userModal').toggleClass('is-active');">
+                    <span class="icon is-small">
+                      <i class="fas fa-user-cog"></i>
+                    </span>
+                  </button>
                   <a id="logout" href="logout" class="button" onclick="logout()">Logout</a>
                 <?php endif; ?>
               </div>
