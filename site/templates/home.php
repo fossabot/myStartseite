@@ -22,7 +22,7 @@
   <form method="POST">
     <div class="field is-grouped is-grouped-multiline has-addons">
       <p class="control has-icons-right">
-        <input class="input" id="s_title" type="text" name="c_title" placeholder="Title" minlength="2" required>
+        <input class="input" id="s_title" type="text" name="c_title" placeholder="Title" minlength="2" maxlength="200" autocomplete="on" required>
         <span class="icon is-small is-right">
           <i class="fas fa-search"></i>
         </span>
@@ -35,7 +35,7 @@
         </span>
       </p>
       <p class="control has-icons-right">
-        <input class="input" id="s_tags" type="text" name="c_tags" placeholder="Tag1, Tag2, Tag3" maxlength="255">
+        <input class="input" id="s_tags" type="text" name="c_tags" placeholder="Tag1, Tag2, Tag3" maxlength="200" autocomplete="on">
         <span class="icon is-small is-right">
           <i class="fas fa-search"></i>
         </span>
