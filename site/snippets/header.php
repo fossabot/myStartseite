@@ -17,13 +17,16 @@
   <!-- The title tag we show the title of our site and the title of the current page -->
   <title><?= $site->title() ?> | <?= $page->title() ?></title>
   <meta name="description" content="">
+
+  <link rel="dns-prefetch" href="//mystartseite.net">
+  <link rel="preconnect" href="//mystartseite.net">
   
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
   <?php  if(option('osano')): ?>
     <script src="https://cmp.osano.com/Azyw0MRqrHJ51Hyu/17b58c70-e801-4f4c-b412-94406e2013c5/osano.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143397157-4"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-143397157-4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
