@@ -13,7 +13,12 @@
 <?php snippet('header') ?>
 <?php snippet('modals/login') ?>
 <?php snippet('modals/signup') ?>
-<?php snippet('modals/change') ?>
+
+<?php  if($kirby->user()) {
+  snippet('modals/change'); 
+  snippet('modals/user'); 
+} ?>
+
 
 <hr>
 
