@@ -131,7 +131,7 @@
   background-color: rgba(177,189,245,0.5333);
 }
 
-*[brand*=web] {
+*[brand*='web.de'] {
   background-image: url("../../assets/brands/web.svg");
   background-color: rgba(255,236,128,0.5333);
 }
@@ -244,4 +244,54 @@
 *[brand*=bing] {
   background-image: url("../../assets/brands/bing.svg");
   background-color: rgba(170, 233, 255, 0.533);
+} 
+
+*[brand*=algolia] {
+  background-image: url("../../assets/brands/algolia.svg");
+  background-color: rgba(212, 217, 255, 0.533);
+} 
+
+*[brand*=basecamp] {
+  background-image: url("../../assets/brands/basecamp.svg");
+  background-color: rgba(173, 255, 206, 0.533);
+} 
+
+*[brand*=codepen] {
+  background-image: url("../../assets/brands/codepen.svg");
+  background-color: rgba(222, 223, 229, 0.533);
+} 
+
+*[brand*=gliffy] {
+  background-image: url("../../assets/brands/gliffy.svg");
+  background-color: rgba(159, 204, 252, 0.533);
+} 
+
+*[brand*=microsoft] {
+  background-image: url("../../assets/brands/microsoft.svg");
+  background-color: rgba(241, 250, 255, 0.533);
+} 
+
+*[brand*=mozilla] {
+  background-image: url("../../assets/brands/mozilla.svg");
+  background-color: rgba(206, 206, 209, 0.533);
+} 
+
+*[brand*=pipedrive] {
+  background-image: url("../../assets/brands/pipedrive.svg");
+  background-color: rgba(231, 232, 234, 0.533);
+} 
+
+*[brand*=pocket] {
+  background-image: url("../../assets/brands/pocket.svg");
+  background-color: rgba(249, 182, 190, 0.533);
+} 
+
+*[brand*=stripe] {
+  background-image: url("../../assets/brands/stripe.svg");
+  background-color: rgba(212, 215, 248, 0.533);
+} 
+
+*[brand*=w3c] {
+  background-image: url("../../assets/brands/w3c.svg");
+  background-color: rgba(217, 234, 247, 0.533);
 } 
