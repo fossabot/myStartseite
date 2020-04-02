@@ -25,16 +25,6 @@
 
   <?php  if(option('osano')): ?>
     <script src="https://cmp.osano.com/Azyw0MRqrHJ51Hyu/17b58c70-e801-4f4c-b412-94406e2013c5/osano.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-143397157-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-143397157-4');
-      ga('set', 'anonymizeIp', true);
-    </script>
   <?php endif; ?>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
