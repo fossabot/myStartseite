@@ -223,11 +223,11 @@ function go(string $url = null, int $code = 302)
 /**
  * Shortcut for html()
  *
- * @param string $string unencoded text
+ * @param string|null $string unencoded text
  * @param bool $keepTags
  * @return string
  */
-function h(string $string = null, bool $keepTags = false)
+function h(?string $string, bool $keepTags = false)
 {
     return Html::encode($string, $keepTags);
 }
@@ -235,11 +235,11 @@ function h(string $string = null, bool $keepTags = false)
 /**
  * Creates safe html by encoding special characters
  *
- * @param string $string unencoded text
+ * @param string|null $string unencoded text
  * @param bool $keepTags
  * @return string
  */
-function html(string $string = null, bool $keepTags = false)
+function html(?string $string, bool $keepTags = false)
 {
     return Html::encode($string, $keepTags);
 }
@@ -401,15 +401,25 @@ function kirby()
  * @param string|array $type
  * @param string $value
  * @param array $attr
+ * @param array $data
  * @return string
  */
-function kirbytag($type, string $value = null, array $attr = []): string
+function kirbytag($type, string $value = null, array $attr = [], array $data = []): string
 {
     if (is_array($type) === true) {
-        return App::instance()->kirbytag(key($type), current($type), $type);
+        $kirbytag = $type;
+        $type     = key($kirbytag);
+        $value    = current($kirbytag);
+        $attr     = $kirbytag;
+
+        // check data attribute and separate from attr data if exists
+        if (isset($attr['data']) === true) {
+            $data = $attr['data'];
+            unset($attr['data']);
+        }
     }
 
-    return App::instance()->kirbytag($type, $value, $attr);
+    return App::instance()->kirbytag($type, $value, $attr, $data);
 }
 
 /**

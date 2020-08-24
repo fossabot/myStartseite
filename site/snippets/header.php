@@ -58,7 +58,7 @@
             <div class="navbar-item">
               <div class="buttons">
                 <a class="button is-rounded is-warning is-static">
-                  #StopPinTab
+                  #StopPinTab <?php echo $kirby->version()?>
                 </a>
                 <?php  if($kirby->user()): ?>
                   <a class="button is-rounded is-warning" style="background-color: #009cde" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q5FEJZKEAR4H4&source=url">
