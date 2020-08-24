@@ -9,19 +9,19 @@ Bookmarks:
   link: 
   tags:
 - 
-  title: Add friends on facebook as cards by saving a title and the link. 
-  link: https://www.facebook.com/
+  title: Add friends on any social media platfrom as cards by saving a title and the link. 
+  link: 
   tags: Social Media
 - 
   title: Your bookmarks stay safe from companies that want your data. No database is used that can be compromised! 👀
   link: 
   tags: Security
 - 
-  title: Do you like shopping? Simply add your favorite online store - or Amazon. 😉
-  link: https://www.amazon.com/
+  title: Do you like shopping? Simply add your favorite online store. 😉
+  link: 
   tags: Shopping
 - 
-  title: We ❤️ Open Source.<br/>Check out the GitHub repo! 🤓
+  title: We ❤️ Open Source.<br/>Check out the repo! 🤓
   link: https://github.com/kreativ-anders/myStartseite/
   tags: Open Source, Code
 - 
@@ -29,10 +29,10 @@ Bookmarks:
   link: 
   tags:
 - 
-  title: Made with Kirby
+  title: Made with a great CMS
   link: https://getkirby.com/
   tags: Open Source
 -
   title: Feedback and comments are highly appreciated.<br/>So feel free to drop a line! 😊
-  link: mailto:hello@kreativ-anders.de?subject=myStartseite-Feedback
+  link: mailto:myStartseite@kreativ-anders.de?subject=myStartseite-Feedback
   tags: Whatever you want to tag 😉

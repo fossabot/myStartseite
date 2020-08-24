@@ -60,9 +60,11 @@
                 <a class="button is-rounded is-warning is-static">
                   #StopPinTab
                 </a>
-                <a class="button is-rounded is-warning" style="background-color: #009cde" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q5FEJZKEAR4H4&source=url">
-                  <input src-root="https://github.com/andreostrovsky/donate-with-paypal" style="width: 190px;" type="image" src="assets/blue-donate-with-PayPal-button.svg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                </a>             
+                <?php  if($kirby->user()): ?>
+                  <a class="button is-rounded is-warning" style="background-color: #009cde" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q5FEJZKEAR4H4&source=url">
+                    <input src-root="https://github.com/andreostrovsky/donate-with-paypal" style="width: 190px;" type="image" src="assets/blue-donate-with-PayPal-button.svg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  </a> 
+                <?php endif; ?>            
               </div>
             </div>
           </div>

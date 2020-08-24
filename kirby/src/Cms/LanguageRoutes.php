@@ -78,13 +78,24 @@ class LanguageRoutes
                     ]);
 
                     if ($url->toString() !== $page->url()) {
+                        // redirect to translated page directly
+                        // if translation is exists and languages detect is enabled
+                        if (
+                            $kirby->option('languages.detect') === true &&
+                            $page->translation($kirby->detectedLanguage()->code())->exists() === true
+                        ) {
+                            return $kirby
+                                ->response()
+                                ->redirect($page->url($kirby->detectedLanguage()->code()));
+                        }
+
                         return $kirby
                             ->response()
                             ->redirect($page->url());
                     }
                 }
 
-                return $kirby->defaultLanguage()->router()->call($path);
+                return $kirby->language()->router()->call($path);
             }
         ];
     }
